@@ -16,15 +16,16 @@
     />
     <style>
       /* write css custom css here */
-      .top-section{
+      .top-section {
         height: 30px;
       }
-      .left a,div {
+      .left a,
+      div {
         color: black;
         text-decoration: none;
         font-size: 10px;
       }
-      .right a{
+      .right a {
         color: black;
         text-decoration: none;
         font-size: 10px;
@@ -42,11 +43,26 @@
       .form-image img {
         width: 110px;
       }
+      .navbar-nav li a {
+        font-size: 11px;
+        font-weight: 600;
+      }
+      .bottom-section{
+        height: 50px;
+      }
+      .bottom-sec-left a {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .bottom-sec-right-images img {
+        height: 40px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div class="part1">
-      <div class="top-section d-flex justify-content-between bg-body-tertiary">
+      <div class="top-section d-flex justify-content-between .bg-white">
         <div class="left d-flex align-items-center">
           <a
             class="LinedLinks--1nzo4t8 dqnvAK getGaData ms-5"
@@ -109,7 +125,7 @@
           >
         </div>
         <div class="right d-flex align-items-center">
-            <a
+          <a
             class="LinedLinks--1nzo4t8 fnGCrH getGaData me-4"
             href="https://www.lenskart.com/optometrist-partner-program"
             >Contact Us</a
@@ -119,10 +135,7 @@
       <nav class="navbar navbar-expand-lg .bg-white">
         <div class="container-fluid d-flex justify-content-between">
           <div class="image">
-            <img
-              src="./Projectlogo.png"
-              alt=""
-            />
+            <img src="./Projectlogo.png" alt="" />
           </div>
           <form class="d-flex image align-items-center" role="search">
             <div class="form-image">
@@ -162,8 +175,51 @@
           </div>
         </div>
       </nav>
-      <div class="bottom-section">
-        
+      <div class="bottom-section d-flex justify-content-between me-4 bg-body-tertiary align-items-center">
+        <div class="bottom-sec-left ">
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-dark ms-4" href="#">EYEGLASSES </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">COMPUTER GLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">KID GLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">CONTACT LENSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">SUNGLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">HOME EYE-TEST</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">STORE LOCATOR</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-sec-right ">
+          <div class="bottom-sec-right-images">
+            <img
+            class="rounded"
+              src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+              alt=""
+            />
+            <img
+            class="rounded"
+              src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+              alt=""
+            />
+            <img
+            class="rounded"
+              src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
 
