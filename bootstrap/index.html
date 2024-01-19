@@ -1,70 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LensLoom</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <style>
-    /* write css custom css here */
-    .top-section {
-      height: 30px;
-    }
-
-    .left a,
-    div {
-      color: black;
-      text-decoration: none;
-      font-size: 10px;
-    }
-
-    .right a {
-      color: black;
-      text-decoration: none;
-      font-size: 10px;
-    }
-
-    .navbar {
-      height: 45px;
-    }
-
-    .form-control {
-      height: 30px;
-      width: 650px;
-    }
-
-    .image img {
-      width: 160px;
-    }
-
-    .form-image img {
-      width: 110px;
-    }
-
-    .navbar-nav li a {
-      font-size: 11px;
-      font-weight: 600;
-    }
-
-    .bottom-section {
-      height: 50px;
-    }
-
-    .bottom-sec-left a {
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    .bottom-sec-right-images img {
-      height: 40px;
-      cursor: pointer;
-    }
-
-    /* part2 */
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LensLoom</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* write css custom css here */
+      .part1 {
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+      }
+      .top-section {
+        height: 30px;
+        background-color: #fff;
+      }
+      .left a,
+      div {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      .right a {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      .navbar {
+        height: 45px;
+        background-color: #fff;
+      }
+      .form-control {
+        height: 30px;
+        width: 600px;
+      }
+      .image img {
+        width: 160px;
+      }
+      .form-image img {
+        width: 110px;
+      }
+      .navbar-nav li a {
+        font-size: 11px;
+        font-weight: 600;
+      }
+      .bottom-section {
+        height: 50px;
+        width: 100%;
+      }
+      .bottom-sec-left a {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .bottom-sec-right-images img {
+        height: 40px;
+        cursor: pointer;
+      }
+      .hov-1 {
+        background-color: #fff;
+        height: 300px;
+        width: 700px;
+        top: 45px;
+        left: 20px;
+        display: none;
+      }
+      .li-1:hover .hov-1 {
+        display: block;
+      }
+      .hov-2 {
+        background-color: #fff;
+        height: 200px;
+        width: 170px;
+        top: 55x;
+        display: none;
+      }
+      .li-2:hover .hov-2 {
+        display: block;
+      }
+      .hov-3 {
+        background-color: #fff;
+        height: 200px;
+        width: 500px;
+        top: 55px;
+        left: -200px;
+        display: none;
+      }
+      .li-3:hover .hov-3 {
+        display: block;
+      }
+      .hov-4 {
+        background-color: #fff;
+        height: 300px;
+        width: 600px;
+        top: 55px;
+        left: -250px;
+        display: none;
+      }
+      .li-4:hover .hov-4 {
+        display: block;
+      }
+      .hov-5 {
+        background-color: #fff;
+        height: 300px;
+        width: 500px;
+        top: 55px;
+        left: -220px;
+        display: none;
+      }
+      .li-5:hover .hov-5 {
+        display: block;
+      }
+      .hov-6 {
+        background-color: #fff;
+        height: 236px;
+        width: 800px;
+        top: 45px;
+        left: -300px;
+        display: none;
+      }
+      .li-6:hover .hov-6 {
+        display: block;
+      }
+      .hov-7 {
+        background-color: #fff;
+        height: 150px;
+        width: 900px;
+        top: 45px;
+        left: -400px;
+        display: none;
+      }
+      .li-7:hover .hov-7 {
+        display: block;
+      }
+      /* part2 */
     .boxi {
       margin-left: 20px;
       margin-top: 8px;
@@ -102,117 +178,813 @@
       margin: 1%;
 
     }
-  </style>
-</head>
-
-<body>
-  <div class="part1">
-    <div class="top-section d-flex justify-content-between .bg-white">
-      <div class="left d-flex align-items-center">
-        <a class="LinedLinks--1nzo4t8 dqnvAK getGaData ms-5" href="https://www.lenskart.com/our-purpose">Do More, Be
-          More</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://www.lenskart.com/compare-looks">Tryin3D</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://www.lenskart.com/stores">StoreLocator</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData"
-          href="https://www.lenskart.sg/?utm_source=lenskart&amp;utm_medium=india&amp;utm_campaign=website">Singapore</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData"
-          href="https://www.lenskart.com/en-ae/?utm_source=lenskart&amp;utm_medium=india&amp;utm_campaign=website">UAE</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://www.johnjacobseyewear.com/">John Jacobs</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://aqualens.in/">Aqualens</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://www.lenskart.com/cobrowsing">Cobrowsing</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData" href="https://medium.com/lenskart-engineering">Engineering
-          Blog</a>
-        <div class="mx-2">|</div>
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData"
-          href="https://www.lenskart.com/optometrist-partner-program">Lenskart Franchise</a>
-      </div>
-      <div class="right d-flex align-items-center">
-        <a class="LinedLinks--1nzo4t8 fnGCrH getGaData me-4"
-          href="https://www.lenskart.com/optometrist-partner-program">Contact Us</a>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg .bg-white">
-      <div class="container-fluid d-flex justify-content-between">
-        <div class="image">
-          <img src="./Projectlogo.png" alt="" />
+    </style>
+  </head>
+  <body>
+    <div class="part1">
+      <div class="top-section d-flex justify-content-between .bg-white">
+        <div class="left d-flex align-items-center">
+          <a
+            class="LinedLinks--1nzo4t8 dqnvAK getGaData ms-5"
+            href="https://www.lenskart.com/our-purpose"
+            >Do More, Be More</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.com/compare-looks"
+            >Tryin3D</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.com/stores"
+            >StoreLocator</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.sg/?utm_source=lenskart&amp;utm_medium=india&amp;utm_campaign=website"
+            >Singapore</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.com/en-ae/?utm_source=lenskart&amp;utm_medium=india&amp;utm_campaign=website"
+            >UAE</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.johnjacobseyewear.com/"
+            >John Jacobs</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://aqualens.in/"
+            >Aqualens</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.com/cobrowsing"
+            >Cobrowsing</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://medium.com/lenskart-engineering"
+            >Engineering Blog</a
+          >
+          <div class="mx-2">|</div>
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData"
+            href="https://www.lenskart.com/optometrist-partner-program"
+            >Lenskart Franchise</a
+          >
         </div>
-        <form class="d-flex image align-items-center" role="search">
-          <div class="form-image">
-            <img src="https://static5.lenskart.com/media/uploads/lenskart-helpline-number-new-9999899998-desktop.png"
-              alt="" />
+        <div class="right d-flex align-items-center">
+          <a
+            class="LinedLinks--1nzo4t8 fnGCrH getGaData me-4"
+            href="https://www.lenskart.com/optometrist-partner-program"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg .bg-white">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="image me-5">
+            <img src="./Projectlogo.png" alt="" />
           </div>
-          <input class="form-control me-2 border border-black" type="search" placeholder="What are you looking for?"
-            aria-label="Search" />
-        </form>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Track Order</a>
+          <form class="d-flex image align-items-center" role="search">
+            <div class="form-image">
+              <img
+                src="https://static5.lenskart.com/media/uploads/lenskart-helpline-number-new-9999899998-desktop.png"
+                alt=""
+              />
+            </div>
+            <input
+              class="form-control me-2 border border-black"
+              type="search"
+              placeholder="What are you looking for?"
+              aria-label="Search"
+            />
+          </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Track Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign In &amp SignUp</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <span class="material-symbols-outlined nav-link">
+                  favorite
+                </span>
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <span class="material-symbols-outlined nav-link">
+                  local_mall
+                </span>
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="bottom-section d-flex justify-content-between me-4 bg-body-tertiary align-items-center"
+      >
+        <div class="bottom-sec-left">
+          <ul class="nav nav-underline">
+            <li class="nav-item position-relative li-1">
+              <a class="nav-link text-dark ms-4" href="#">EYEGLASSES </a>
+              <div class="hov-1 position-absolute justify-content-around">
+                <div class="four-parts d-flex fw-lighter">
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Our Top Picks</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        New Arrivals</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Best Seller,</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Lenskart BLU Lenses</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Trending</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Computer Eyeglasses</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Tinted Eyeglasses</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Progressive Eyeglasses</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Frame Type</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Rectangle Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Wayfarer Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Round Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Aviator Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Cat-Eye Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Rimless Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Halfrim Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Geometric Frames</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Collection</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Collection</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Switch Grip</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Air Essentials</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Urban Edit</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Blend Edit</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Sleek Steel</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Switch - Magnetic Clips-On</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Air Flex</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Air Wrap</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Classic Acetate</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Essential Edit</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>AGE</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        2-5 Yrs</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        5-8 Yrs</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >8-12 Yrs</a
+                      >
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign In &amp SignUp</a>
+            <li class="nav-item position-relative li-2">
+              <a class="nav-link text-dark" href="#">COMPUTER GLASSES</a>
+              <div class="hov-2 position-absolute">
+                <div class="cards-nav3">
+                  <div class="card" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body d-flex align-items-center">
+                          <h5 class="card-title">Men</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body d-flex align-items-center">
+                          <h5 class="card-title">Women</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body d-flex align-items-center">
+                          <h5 class="card-title">Kid</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item d-flex align-items-center">
-              <span class="material-symbols-outlined nav-link">
-                favorite
-              </span>
-              <a class="nav-link" href="#">Wishlist</a>
+            <li class="nav-item position-relative li-3">
+              <a class="nav-link text-dark" href="#">KID GLASSES</a>
+              <div class="hov-3 position-absolute">
+                <div class="hov-3-images d-flex justify-content-around">
+                  <div class="card d-flex">
+                    <img
+                      src="https://static1.lenskart.com/media/desktop/img/May22/glasses.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="ms-5">Eyeglasses</p>
+                  </div>
+                  <div class="card d-flex">
+                    <img
+                      src="https://static1.lenskart.com/media/desktop/img/May22/computer-glasses.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p>Zero Power Computer Glasses</p>
+                  </div>
+                  <div class="card d-flex">
+                    <img
+                      src="https://static1.lenskart.com/media/desktop/img/May22/Sunnies.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="ms-5">Sunglasses</p>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item d-flex align-items-center">
-              <span class="material-symbols-outlined nav-link">
-                local_mall
-              </span>
-              <a class="nav-link" href="#">Cart</a>
+            <li class="nav-item position-relative li-4">
+              <a class="nav-link text-dark" href="#">CONTACT LENSES</a>
+              <div class="hov-4 position-absolute">
+                <div
+                  class="four-parts d-flex fw-lighter justify-content-between"
+                >
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Brands</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Aqualens</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Bausch Lomb</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Soflens</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Acuvue</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Iconnect</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Alcon</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Explore By Disposablity</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Monthly</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Day &amp; Night</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Daily</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Yearly</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Bi-weekly</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Explore By Power</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Spherical - (CYL &lt; 0.5)
+                      </a>
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Spherical + (CYL &lt; 0.5)
+                      </a>
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Cylindrical Power( &gt; 0.75)
+                      </a>
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Toric Power</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Explore By Color</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Green</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Blue</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Brown</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Turquoise</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >View all colors</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Solution</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Small</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Large</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >View all solutions</a
+                      >
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item position-relative li-5">
+              <a class="nav-link text-dark" href="#">SUNGLASSES</a>
+              <div class="hov-5 position-absolute">
+                <div
+                  class="four-parts d-flex fw-lighter justify-content-between"
+                >
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Our Top Picks</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Best Seller</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >New Arrivals</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Power Sunglasses</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Shape</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Aviator</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Rounders</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Wayfarer</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Rectangle</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Hexagon</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Cat-Eye</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Clubmaster</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Collection</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Maverick
+                      </a>
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Fashion Essentials</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Aerodynamics</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Glam Slam</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Havana</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Polarized</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Power Sunglasses</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >Designer Sunglasses</a
+                      >
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="d-flex flex-column text-dark bg-opacity-50">
+                      <h6>Brands</h6>
+                      <hr />
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        Vincent Chase</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                      >
+                        John Jacobs</a
+                      >
+                      <a
+                        class="text-decoration-none text-dark bg-opacity-25"
+                        href="#"
+                        >OJOS</a
+                      >
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item position-relative li-6">
+              <a class="nav-link text-dark" href="#">HOME EYE-TEST</a>
+              <div class="hov-6 position-absolute">
+                <div class="d-flex">
+                  <div class="left-hov-6">
+                    <img
+                      class="col-12"
+                      src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="right-hov-6 col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
+                    >
+                      <h4>Get your eyes checked at home</h4>
+                      <h6>
+                        A certified refractionist will visit you with latest eye
+                        testing machines &amp; 100 trial frames
+                      </h6>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary-subtle text-dark"
+                        disabled
+                      >
+                        Book Appointment
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item position-relative li-7">
+              <a class="nav-link text-dark" href="#">STORE LOCATOR</a>
+              <div class="hov-7 position-absolute ">
+                  <div class="d-flex ">
+                    <div
+                      class="left-hov-6 col-6 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="col-12 d-flex flex-column justify-content-center align-items-center text-center"
+                      >
+                        <h4>Over 1100+ Lenskart Store</h4>
+                        <h6>
+                          Experience eyewear in a whole new way: Visit your nearest store
+                          and treat yourself to 5000+ eyewear styles.
+                        </h6>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary-subtle text-dark"
+                          disabled
+                        >
+                          Locate a store
+                        </button>
+                      </div>
+                    </div>
+                    
+                    <div class="right-hov-6 ">
+                      <div class="container ">
+                        <div class="row col-12">
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Delhi1.png" alt="">
+                            <p>Delhi</p>
+                          </div>
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Banglore1.png" alt="">
+                            <p>Bangalore</p>
+                          </div>
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Mumbai1.png" alt="">
+                            <p>Mumbai</p>
+                          </div>
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Ahmedabad1.png" alt="">
+                            <p>Ahmedabad</p>
+                          </div>
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Chennai1.png" alt="">
+                            <p>Chennai</p>
+                          </div>
+                          <div class="col-2 d-flex flex-column align-items-center">
+                            <img src="https://static.lenskart.com/media/desktop/img/Hyderabad1.png" alt="">
+                            <p>Hyderabad</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <div class="bottom-section d-flex justify-content-between me-4 bg-body-tertiary align-items-center">
-      <div class="bottom-sec-left ">
-        <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link text-dark ms-4" href="#">EYEGLASSES </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">COMPUTER GLASSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">KID GLASSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">CONTACT LENSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">SUNGLASSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">HOME EYE-TEST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">STORE LOCATOR</a>
-          </li>
-        </ul>
-      </div>
-      <div class="bottom-sec-right ">
-        <div class="bottom-sec-right-images">
-          <img class="rounded" src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt="" />
-          <img class="rounded" src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt="" />
-          <img class="rounded" src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png" alt="" />
+        <div class="bottom-sec-right">
+          <div class="bottom-sec-right-images">
+            <img
+              class="rounded"
+              src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+              alt=""
+            />
+            <img
+              class="rounded"
+              src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+              alt=""
+            />
+            <img
+              class="rounded"
+              src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="part2">
+    <!-- Part 2 -->
+     <div class="part2">
       <div class="container-fluid bg-body-tertiary ">
           <!-- first section start -->
           <!-- first card -->
@@ -697,13 +1469,14 @@
       <!-- box five end -->
       <!-- part2 end -->
   </div>
-  <div class="part3"></div>
-  <div class="part4"></div>
-  <div class="part5"></div>
+    <div class="part3"></div>
+    <div class="part4"></div>
+    <div class="part5"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
