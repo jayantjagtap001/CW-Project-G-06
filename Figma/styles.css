@@ -1,2 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rectangle-part-f2 {
+  width: 1440px;
+  height: 768px;
+  background: #434ccc;
+  padding-top: 79px;
+}
+.rectangle-part-f2 h5 {
+  color: white;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 4.8px;
+  word-wrap: break-word;
+  margin-left: 656px;
+  margin-right: 656px;
+}
+.rectangle-part-f2 h2 {
+  color: white;
+  font-size: 56px;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  line-height: 64px;
+  word-wrap: break-word;
+  margin-top: 21px;
+  margin-left: 506px;
+  margin-right: 505px;
+}
+.rectangle-part-f2 .sit-bonorum-graecis-part-f2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+  margin-top: 29px;
+  margin-left: 435px;
+  margin-right: 435px;
+}
+.rectangle-part-f2 .rectangle-1-part-f2 {
+  width: 1170px;
+  height: 512px;
+  background: #f1b505;
+  border-radius: 5px;
+  margin-top: 52px;
+  margin-left: 135px;
+  margin-right: 135px;
+  position: relative;
+}
+.rectangle-part-f2 .rectangle-1-part-f2 .commune-part-f2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin-top: 111px;
+  margin-left: 100px;
+  margin-right: 992px;
+}
+.rectangle-part-f2 .rectangle-1-part-f2 .ei-mei-fabellas-gube-part-f2 {
+  color: white;
+  font-size: 56px;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  line-height: 64px;
+  word-wrap: break-word;
+  margin-top: 21px;
+  margin-left: 100px;
+  margin-right: 700px;
+}
+.rectangle-part-f2 .rectangle-1-part-f2 .colored-box {
+  width: 1170px;
+  height: 512px;
+  position: absolute;
+  background: #F1B505;
+  border-radius: 5px;
+}
+.rectangle-part-f2 .rectangle-1-part-f2 .image-1-part-f2 {
+  left: 219px;
+  top: -71px;
+  position: absolute;
+}
 
 /*# sourceMappingURL=styles.css.map */
