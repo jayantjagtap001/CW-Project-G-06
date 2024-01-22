@@ -22,6 +22,8 @@
 <img width="483" alt="image" src="https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/35b9ff53-53cf-4796-96e0-f2fd06fe25af">
 
 <h2>Footer</h2>
+<img width="959" alt="image" src="https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/d130a73f-47ef-498c-8b55-7686a815467a">
+
 
 
 
