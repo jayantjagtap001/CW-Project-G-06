@@ -7,5 +7,10 @@
 <p>The central component of LensLoom impresses with a dynamic carousel showcasing featured eyewear products. Developed using Bootstrap, CSS, and HTML, this section seamlessly combines visual appeal with functionality. The carousel captures attention, offering a delightful user experience, while additional content below provides detailed information, creating an engaging and informative main section for eyewear enthusiasts.</p>
 <img width="960" alt="image" src="https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/706a0578-e0b6-4806-ac83-e8649550d611">
 
+<h2>Footer</h2>
+<p>LensLoom's footer is a well-crafted conclusion to the eyewear platform. Utilizing Bootstrap, CSS, and HTML, it features organized sections with links to essential pages, possibly including contact information and social media links. The footer maintains the project's visual consistency, offering a polished and informative closure to the user experience.</p>
+<img width="960" alt="image" src="https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/d6de6549-299d-4423-9503-a0987af7e4aa">
+
+
 
 
