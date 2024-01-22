@@ -12,5 +12,10 @@
 <img width="960" alt="image" src="https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/d6de6549-299d-4423-9503-a0987af7e4aa">
 
 
+<h1>FIGMA-DESIGN</h1>
+
+<h2>Header</h2>
+<p>In the pixel-perfect Figma design, the layout is meticulously crafted for precision and visual harmony. Utilizing a clean and modern aesthetic, each element aligns perfectly on a grid. Crisp typography enhances readability, and well-defined spacing ensures a balanced composition. Thoughtful color choices contribute to a cohesive and visually pleasing experience, showcasing attention to detail in creating a polished and professional design.</p>
+![image](https://github.com/jayantjagtap001/CW-Project-G-06/assets/98681520/104b0cb6-9ea0-49b9-88e0-050d4fccb327)
 
 
